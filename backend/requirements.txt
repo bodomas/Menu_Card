@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+firebase-admin
+pydantic
+python-multipart
+passlib[bcrypt]
+pyjwt
