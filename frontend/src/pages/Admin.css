@@ -1,0 +1,140 @@
+/* Container */
+.admin-wrap {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Login Card */
+.admin-card {
+  max-width: 380px;
+  margin: 70px auto;
+  background: rgba(255,255,255,0.06);
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.admin-card input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+}
+
+/* Buttons */
+.admin-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #f2c200;
+  font-weight: 800;
+  color: #000000;
+}
+
+/* Admin Menu Manager */
+.admin-title {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 26px;
+  color: #f2c200;
+}
+
+/* Form */
+.admin-form {
+  background: rgba(255,255,255,0.06);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 22px;
+}
+
+.admin-form input,
+.admin-form select,
+.admin-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: rgb(255, 244, 244);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #000000;
+}
+
+/* File Upload */
+.file-upload {
+  margin-top: 10px;
+  display: block;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color:#000000;
+  text-align: center;
+}
+
+.file-upload input {
+  display: none;
+  
+}
+
+/* Item Grid */
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 14px;
+}
+
+.admin-item {
+  background: rgba(255,255,255,0.06);
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.admin-item img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.admin-item .price {
+  font-weight: 700;
+  margin: 6px 0;
+  color: #f2c200;
+}
+
+/* Edit/Delete Buttons */
+.edit-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-btn {
+  flex: 1;
+  margin-right: 4px;
+  background: #f2c200;
+  padding: 6px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #000;
+  border: none;
+}
+
+.delete-btn {
+  flex: 1;
+  margin-left: 4px;
+  background: #ff4b4b;
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+}

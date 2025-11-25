@@ -1,6 +1,7 @@
 from app.config.firebase import db
 
 class FirestoreService:
+
     def list_collection(self, collection):
         docs = db.collection(collection).stream()
         return [{**d.to_dict(), "id": d.id} for d in docs]
@@ -16,6 +17,7 @@ class FirestoreService:
             ref = db.collection(collection).document(doc_id)
             ref.set(data)
             return doc_id
+
         ref = db.collection(collection).document()
         ref.set(data)
         return ref.id
