@@ -10,13 +10,12 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDsxC9uuj43HGWm3akf7RQBouMSbuPY2Ss",
-  authDomain: "menu-card-22071.firebaseapp.com",
-  projectId: "menu-card-22071",
-  storageBucket: "menu-card-22071.firebasestorage.app",
-  messagingSenderId: "65917133566",
-  appId: "1:65917133566:web:fd33c8c6b88d6d65dd3baf",
-  measurementId: "G-KJENZPNSHD"
+  apiKey: import.meta.env.apiKey,
+  authDomain: import.meta.env.authDomain,
+  projectId: import.meta.env.projectId,
+  storageBucket: import.meta.env.storageBucket,
+  messagingSenderId: import.meta.env.messagingSenderId,
+  appId: import.meta.env.appId
 };
 
 const app = initializeApp(firebaseConfig);
